@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: black;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -42,7 +42,7 @@ $background: #fff;
 $background-alt: #f2f2f5;
 
 // Define border colors
-$border: #dcd9d9;
+$border: #fff;
 
 // Define text colors
 $heading: #374054;
@@ -141,12 +141,13 @@ body {
 }
 
 header {
-    position: absolute;
+    background: $background;
+    position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 10;
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -760,7 +761,7 @@ footer {
 
         &:focus {
             outline: none;
-            background: darken($base-color, 25%);
+            background: darken($background, 25%);
         }
     }
 
@@ -927,7 +928,6 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%;
-
         li {
             display: block;
             margin-bottom: 10px;
