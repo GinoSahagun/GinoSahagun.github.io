@@ -186,7 +186,6 @@ header {
             &:hover {
                 text-decoration: none;
                 color: black;
-                
             }
             &:focus {
                 color: $base-color;
@@ -676,6 +675,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background: white;
     h2 {
         color: $heading;
         margin-bottom: 50px;
@@ -695,25 +695,71 @@ footer {
         list-style: none;
         cursor: default;
         font-size: 1.2em;
-    }
-}
-//List of Langauges or other skills
-#langSkills
-{
-    li {
-
         &:hover {
-                color: white;
-                background: #000;
-         }
-        
+            color: white;
+            background: #000;
+        }
     }
 }
+
+
 /*
     -------------------------------
     ----- 10. Contact Styles -----
     -------------------------------
 */
+
+#contact-animation {
+    background: black;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        color: lighten($base-color, 45%);
+    }
+    h2 {
+        margin: 0 0 15px 0;
+        color: #fff;
+        font-weight: 500;
+    }
+    svg {
+        position: relative;
+        width: 200px;
+        height: 144px;
+        margin: 0 auto;
+        display: block;
+    }
+    #steam {
+        opacity: .5;
+    }
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        font-family: "Bree Serif", serif;
+        color: white;
+    }
+    .social-contact {
+            text-align: center;
+            ul {
+                margin: 5px 0 0 0;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                font-size: 1.25em;
+                list-style: none;
+            }
+            a {
+                display: block;
+                color: $text;
+                padding: 10px;
+                &:hover {
+                    color: $background-alt;
+                }
+            }
+    }
+}
 
 #contact {
     padding: 50px 15px;
