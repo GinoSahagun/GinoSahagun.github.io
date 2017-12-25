@@ -264,6 +264,12 @@ footer {
         border-radius: 50%;
         border: 3px solid lighten($text, 25%);
         text-align: center;
+        &:hover{
+            border: 3px solid black;
+            i {
+                color: black;
+            }
+        }
     }
     i {
         color: $text;
@@ -302,6 +308,9 @@ footer {
         color: $base-color;
         background: #fff;
         text-decoration: none;
+    }
+    &::selection{
+        color: $background;
     }
 }
 
@@ -603,6 +612,32 @@ footer {
     }
 }
 
+#honors{
+    text-align: center;
+    background: white;
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    li {
+        margin: 7px;
+        padding: 5px 10px;
+        color: $heading;
+        background: darken($background-alt, 5%);
+        list-style: none;
+        cursor: default;
+        font-size: 1.2em;
+        &:hover {
+            color: white;
+            background: #000;
+        }
+    }
+}
 
 /*
     -------------------------------
@@ -631,6 +666,10 @@ footer {
 
 .project-image {
     float: left;
+    img{
+    width: 300px;
+    height: 300px;
+    }
 }
 
 .project-info {
@@ -803,16 +842,18 @@ footer {
     button {
         display: block;
         width: 100%;
-        background: #fff;
+        background: transparent;
         border-radius: 4px;
         padding: 5px 10px;
-        border: none;
-        color: $base-color;
+        border: 1px solid white;
+        color: $background;
         font-weight: 700;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         @include transition();
         &:hover {
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            background: white;
+            color: $base-color;
         }
     }
 }
@@ -820,7 +861,7 @@ footer {
 
 /*
     ---------------------------------------
-    ----- 11. Optional Section Styles -----
+    ----- 11 Optional Section Styles -----
     ---------------------------------------
 */
 
