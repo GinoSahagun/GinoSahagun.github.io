@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/circle.ico" type="image/x-icon">
+    <link rel="icon" href="images/circle.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/github-calendar-responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -248,10 +249,24 @@
             <li>C</li>
             <li>C#</li>
             <li>C++</li>
+            <li>Visual Studio</li>
+            <li>Unity Engine</li>
+            <li>Unreal Engine</li>
         </ul>
     </div>
     <!-- End #skills -->
 
+    <!-- Github Commints -->
+    <div id="git-calendar">
+        <div class="container">
+            <h3>Commit early, commit often. A tip for version controlling</h3>
+                <div class="calendar"></div>
+        </div>
+        
+    </div>
+
+
+    
 
     <!-- Contact -->
     <div id="contact">
@@ -402,7 +417,11 @@
 
     <script src="js/libs/stats.min.js"></script>
     <script src="js/libs/tween.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/github-calendar.min.js"></script>
+    <script>
+    new GitHubCalendar('.calendar','GinoSahagun');
+    </script>
 
 </body>
 

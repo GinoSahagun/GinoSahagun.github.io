@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "github-calendar": "^1.2.1",
     "three": "^0.89.0"
   }
 }
