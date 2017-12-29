@@ -984,7 +984,6 @@ footer {
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
-        width: 100%;
         li {
             display: block;
             margin-bottom: 10px;
@@ -1026,7 +1025,13 @@ footer {
     .social {
         text-align: center;
     }
+
+    #contact-animation{
+        margin-top: 30px;
+    }
+
 }
+
 
 // Extra Small Devices
 @media only screen and (max-width: 480px) {
@@ -1041,5 +1046,8 @@ footer {
             font-size: 0.9em;
             padding: 5px 10px;
         }
+    }
+    #contact-animation{
+        margin-top: 30px;
     }
 }

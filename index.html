@@ -256,7 +256,7 @@
     </div>
     <!-- End #skills -->
 
-    <!-- Github Commints -->
+    <!-- Github Calendar -->
     <div id="git-calendar">
         <div class="container">
             <h3>Commit early, commit often. A tip for version controlling</h3>
@@ -266,7 +266,7 @@
     </div>
 
 
-    
+    <!-- End Calendar -->
 
     <!-- Contact -->
     <div id="contact">
@@ -420,7 +420,10 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/github-calendar.min.js"></script>
     <script>
-    new GitHubCalendar('.calendar','GinoSahagun');
+    var options = {
+        responsive: true
+    }
+    new GitHubCalendar('.calendar','GinoSahagun', options);
     </script>
 
 </body>
